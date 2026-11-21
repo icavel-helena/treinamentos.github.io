@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tutorial demonstrativo da Central de Atendimento." />
+    <title>Central de Atendimento | Treinamentos Icavel</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="assets/js/tutorial.js" defer></script>
+  </head>
+  <body class="min-h-screen bg-slate-50 text-slate-800 antialiased">
+    <header class="border-b border-slate-200 bg-white">
+      <div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
+        <a href="index.html" class="font-semibold tracking-tight text-slate-900">
+          Icavel <span class="font-normal text-slate-500">/ Treinamentos</span>
+        </a>
+        <a href="index.html" class="text-sm text-blue-700 hover:text-blue-900">Todos os tutoriais</a>
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-5xl px-6 py-10 sm:py-14">
+      <a href="index.html" class="text-sm text-slate-500 hover:text-blue-700">← Voltar ao hub</a>
+      <div class="mt-8 grid gap-10 lg:grid-cols-[210px_minmax(0,1fr)]">
+        <nav aria-label="Nesta página" class="self-start border-l border-slate-200 pl-4 lg:sticky lg:top-8">
+          <h2 class="mb-3 text-sm font-semibold text-slate-900">Nesta página</h2>
+          <ul class="space-y-2 text-sm text-slate-600">
+            <li><a class="hover:text-blue-700" href="#solicitacao">Seção 1</a></li>
+            <li><a class="hover:text-blue-700" href="#detalhes">Seção 2</a></li>
+            <li><a class="hover:text-blue-700" href="#acompanhamento">Seção</a></li>
+          </ul>
+        </nav>
+
+        <article class="min-w-0">
+          <p class="text-sm font-medium uppercase tracking-wide text-blue-700">Tutorial demonstrativo</p>
+          <h1 class="mt-2 text-4xl font-semibold tracking-tight text-slate-950">Agenda Icavel</h1>
+          <p class="mt-4 text-lg leading-8 text-slate-600">
+            Veja como utilizar organizar suas tarefas e eventos na Agenda Icavel.
+          </p>
+
+          <section id="solicitacao" class="scroll-mt-8 border-b border-slate-200 py-8">
+            <h2 class="text-2xl font-semibold tracking-tight text-slate-900">Abrir solicitação</h2>
+            <p class="mt-3 leading-7 text-slate-600">
+              Escolha a categoria mais próxima do assunto para encaminhar o pedido à equipe adequada.
+            </p>
+            <ol class="mt-4 list-decimal space-y-2 pl-6 leading-7 text-slate-600">
+              <li>Selecione “Nova solicitação”.</li>
+              <li>Escolha uma categoria e informe um título objetivo.</li>
+              <li>Confira os dados antes de enviar.</li>
+            </ol>
+            <label class="mt-5 flex cursor-pointer items-start gap-3 text-slate-700">
+              <input data-tutorial-step type="checkbox" class="mt-1 size-4 accent-blue-700" />
+              <span>Escolhi uma categoria e registrei um título claro.</span>
+            </label>
+          </section>
+
+          <section id="detalhes" class="scroll-mt-8 border-b border-slate-200 py-8">
+            <h2 class="text-2xl font-semibold tracking-tight text-slate-900">Adicionar detalhes</h2>
+            <p class="mt-3 leading-7 text-slate-600">
+              Descreva o que aconteceu e inclua as informações necessárias para reproduzir ou analisar a situação.
+            </p>
+            <ul class="mt-4 list-disc space-y-2 pl-6 leading-7 text-slate-600">
+              <li>Informe quando o problema começou.</li>
+              <li>Descreva as ações realizadas e a mensagem exibida.</li>
+              <li>Evite incluir senhas ou dados pessoais desnecessários.</li>
+            </ul>
+            <details class="mt-4 border-l-2 border-blue-200 pl-4 text-sm text-slate-600">
+              <summary class="cursor-pointer font-medium text-slate-700">Exemplo de descrição</summary>
+              <p class="mt-2 leading-6">“Ao consultar o pedido de demonstração, a página exibiu uma mensagem de indisponibilidade às 10h. Tentei novamente e o resultado foi o mesmo.”</p>
+            </details>
+            <label class="mt-5 flex cursor-pointer items-start gap-3 text-slate-700">
+              <input data-tutorial-step type="checkbox" class="mt-1 size-4 accent-blue-700" />
+              <span>Incluí contexto suficiente sem compartilhar informações sensíveis.</span>
+            </label>
+          </section>
+
+          <section id="acompanhamento" class="scroll-mt-8 py-8">
+            <h2 class="text-2xl font-semibold tracking-tight text-slate-900">Acompanhar atendimento</h2>
+            <p class="mt-3 leading-7 text-slate-600">
+              A lista de solicitações mostra o identificador, o status atual e as últimas atualizações.
+            </p>
+            <ul class="mt-4 list-disc space-y-2 pl-6 leading-7 text-slate-600">
+              <li>Guarde o número do protocolo.</li>
+              <li>Abra a solicitação para ler comentários e pedidos de informação.</li>
+              <li>Responda no próprio registro para manter o histórico organizado.</li>
+            </ul>
+            <label class="mt-5 flex cursor-pointer items-start gap-3 text-slate-700">
+              <input data-tutorial-step type="checkbox" class="mt-1 size-4 accent-blue-700" />
+              <span>Localizei o protocolo e o status da solicitação.</span>
+            </label>
+          </section>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>
